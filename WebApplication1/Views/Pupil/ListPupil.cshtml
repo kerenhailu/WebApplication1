@@ -1,0 +1,26 @@
+﻿
+@{
+    ViewBag.Title = "ListPupil";
+}
+
+<h2>ListPupil</h2>
+@*שתי תשובות*@ 
+@for (var i = 0; i < Model.Count; i++)
+{
+    <h4>name : @Model[i].name</h4>
+    <h4>lname : @Model[i].lname</h4>
+    <h4>yearBorn : @Model[i].yearBorn</h4>
+    <h4>great : @Model[i].great</h4>
+    @*<h4>-----------------------------</h4>*@
+    <hr />
+
+}
+
+
+@*@foreach (var item in Model)
+{
+    <h4>name : @item.name</h4>
+    <h4>lname : @item.lname</h4>
+    <h4>yearBorn : @item.yearBorn</h4>
+    <h4>great : @item.great</h4>
+}*@

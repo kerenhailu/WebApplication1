@@ -1,0 +1,15 @@
+﻿
+@{
+    ViewBag.Title = "ShowNameLongerThan4";
+}
+
+<h2>ShowNameLongerThan4</h2>
+@for (var i = 0; i < 10; i++)
+{
+    if (ViewBag.famaliyNames[i].Length > 4)
+    {
+        <h1>@ViewBag.famaliyNames[i]</h1>
+    }
+}
+
+

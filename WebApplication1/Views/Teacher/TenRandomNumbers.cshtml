@@ -1,0 +1,15 @@
+﻿
+@*@{
+    ViewBag.Title = "TenRandomNumbers";
+}*@
+
+<h2>TenRandomNumbers</h2>
+@*<h3>@ViewBag.arrayNames</h3>*@
+@for (int i = 0; i < 10; i++)
+{
+    if (ViewBag.arrayNames[i] % 2 == 0)
+    {
+        <h1>@ViewBag.arrayNames[i]</h1>;
+    }
+}
+
